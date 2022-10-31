@@ -423,6 +423,12 @@ export async function buildProject(
             }
             const artifacts: string[] = []
             langs.forEach((lang) => {
+               artifacts.push(
+                join(
+                  artifactsPath,
+                  `${fileAppName}.exe`
+                )
+              )
               artifacts.push(
                 join(
                   artifactsPath,
